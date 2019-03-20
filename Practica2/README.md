@@ -16,7 +16,7 @@ Tras ejecutar **ssh-keygen** en la máquina secundaria para generar la llave pú
 ![ssh_sin_contraseña](https://github.com/pcerezo/SWAP1819/blob/master/Practica2/ssh_sin_contraseña.png)
 
 ## Automaticación de copia de archivos: crontab
-Tras comprobar el correcto funcionamiento de rsync y que ssh ya no pide contraseña, automatizo el proceso en crontab para que cada cierto tiempo ejecute la orden en un segundo plano. Para que el clonado sea más completo, he añadido las opciones **--delete** y **--exclude** en la parte de órdenes de crontab. Dicho archivo quedaría de esta forma:
+Tras comprobar el correcto funcionamiento de rsync y que ssh ya no pide contraseña, automatizo el proceso en crontab para que al minuto 0 de cada hora ejecute la orden en un segundo plano. Para que el clonado sea más completo, he añadido las opciones **--delete** y **--exclude** en la parte de órdenes de crontab. Dicho archivo quedaría de esta forma:
 
 ![crontab](https://github.com/pcerezo/SWAP1819/blob/master/Practica2/crontab.png)
 
