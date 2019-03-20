@@ -1,6 +1,8 @@
-#PRÁCTICA 1
+# PRÁCTICA 1
+
 Acceder por ssh y curl entre dos servidores.
-##Descripción
+
+## Descripción
 
 Primero indico qué **interfaz de red** contiene cada servidor Ubuntu (ambos clonados pero con direcciones de red diferentes):
 
