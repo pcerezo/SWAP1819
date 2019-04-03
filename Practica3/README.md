@@ -1,5 +1,5 @@
-#PRÁCTICA 3: Balanceado de carga
-##Uso de nginx
+# PRÁCTICA 3: Balanceado de carga
+## Uso de nginx
 Antes que nada muestro las IP's de cada máquina y los contenidos de cada archivo que vamos a tratar para demostrar el correcto funcionamiento de las herramientas:
 
 La IP de la máquina principal es:
@@ -28,13 +28,13 @@ También podemos alterar el balanceo indicando mayor peso (mayor proporción de 
 ![balanceo_ponderado](https://github.com/pcerezo/SWAP1819/blob/master/Practica3/balanceo_ponderado_nginx.png)
 
 
-##Uso de haproxy
+## Uso de haproxy
 Tras instalar haproxy, activarlo y detener nginx, procedo a editar su archivo de configuración:
 ![haproxy_conf](https://github.com/pcerezo/SWAP1819/blob/master/Practica3/haproxy_conf.png)
 
 Y muestro su correcto balanceo:
 ![balanceo_haproxy](https://github.com/pcerezo/SWAP1819/blob/master/Practica3/balanceo_haproxy.png)
 
-##Apache Benchmark
+## Apache Benchmark
 Por último someto a una carga importante de 1000 peticiones de 10 peticiones concurrentes a ambos servidores orquestados por el balanceador nginx:
 ![apache_benchmark](https://github.com/pcerezo/SWAP1819/blob/master/Practica3/apache_benchmark.png)
