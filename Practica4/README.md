@@ -15,7 +15,7 @@ Hacemos lo mismo con el segundo servidor pero obteniendo los archivos mediante r
 
 ![Imagen4](https://github.com/pcerezo/SWAP1819/blob/master/Practica4/4_activarssl_reiniciarApache.png)
 
-![Imagen5](https://github.com/pcerezo/SWAP1819/blob/master/Practica4/5_rsync_balanceado.png)
+![Imagen5](https://github.com/pcerezo/SWAP1819/blob/master/Practica4/5_rsync_balanceador.png)
 
 En el balanceador también guardamos los archivos del certificado digital y además modificamos el archivo de configuración del balanceador nginx indicando el puerto por el que escuchar ssl y las rutas en las que almacenamos los archivos del certificado.
 
