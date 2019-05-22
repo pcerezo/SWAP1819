@@ -10,7 +10,7 @@ En la máquina 1 insertamos valores a dicha tabla y, tras ejecutar la orden *"FL
 
 Tras generar mencionado archivo, liberamos el cerrojo que pusimos sobre él y vamos a la segunda máquina (la máquina esclava). En ella usamos la orden **scp** para obtener el archivo .sql desde la máquina 1 (la máquina maestra). Posteriormente creamos la base de datos **Libreria** en la esta máquina y después importamos a mysql el archivo .sql de antes.
 
-![unlock]()
+![unlock_tables_m1]()
 ![scp_Libreria_maquina2]()
 
 ## Replicacion de BD automática maestro-esclavo
@@ -23,4 +23,8 @@ Podemos apreciar que no se muestra ningún tipo de error en los valores de las v
 Probamos ahora a introducir valores de prueba en la base de datos de la máquina maestra para comprobar que también aparecen en la máquina esclava:
 
 ![replicacion]()
+
+Por último, señalar que he creado un script de formato **.sql** en el que están asignadas todas las variables de la configuración del esclavo necesarias para la replicación automática, por lo que, si existiera algún problema con dicho proceso, bastaría con comprobar el estado del maestro en mysql y en función de ello modificar las variables correspondientes en el fichero. Justo después habría que parar el esclavo en mysql de la máquina secundaria, ejecutar *source **script.sql*** y volver a lanzar el esclavo. Éste es el script que he usado:
+
+![script_sql]()
 
